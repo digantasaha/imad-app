@@ -14,6 +14,33 @@ var articleOne={
 };
 
 var htmlTemplate=`
+<html>
+    <head>
+        <title>Diganta Saha</title>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+        <a href="/">Home</a>
+        </div>
+        <br>
+        <hr/>
+        <div class="container">
+        <div>
+            <h3>${heading}</h3>
+        </div>
+        <div>
+            ${content}
+        </div>
+        <div>
+          <p>
+              My name is Diganta Saha.
+          </p>
+        </div>
+       </div> 
+        </body>
+       
+</html>
 
 `
 
