@@ -12,11 +12,15 @@ var articleOne={
                I am new to development.
             </p>`
 };
-
+function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var content=data.content;
+}
 var htmlTemplate=`
 <html>
     <head>
-        <title>Diganta Saha</title>
+        <title>${title}</title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -43,7 +47,8 @@ var htmlTemplate=`
 </html>
 
 `
-
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -53,7 +58,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+   res.send(createTemplate(articleOne));
 })
 
 app.get('/article-two',function(req,res){
