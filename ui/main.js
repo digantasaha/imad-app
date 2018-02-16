@@ -6,7 +6,7 @@ var element=document.getElementById('main-text');
 
 element.innerHTML='Something New!!!';
 // move the image
-/*var element1=document.getElementById('image');
+var element1=document.getElementById('image');
 element1.onclick= function() {
   image.style.marginLeft= '200px';  
-};*/
+};
