@@ -7,6 +7,12 @@ var element=document.getElementById('main-text');
 element.innerHTML='Something New!!!';
 // move the image
 var element1=document.getElementById('image');
+var marginLeft =0;
+function moveRight() {
+    marginLeft=marginLeft + 10;
+    img.style.marginLeft=marginLeft +'px';
+}
 element1.onclick= function() {
-  image.style.marginLeft= '200px';  
+    var interval=setInterval(moveLeft,100);
+  //image.style.marginLeft= '200px';  
 };
