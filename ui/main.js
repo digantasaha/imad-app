@@ -4,7 +4,7 @@ console.log('Loaded!');
 
 var element=document.getElementById('main-text');
 
-element.innerHTML='SOmething New!!!';
+element.innerHTML='Something New!!!';
 // move the image
 var element1=document.getElementById('image');
 element1.onclick= function() {
