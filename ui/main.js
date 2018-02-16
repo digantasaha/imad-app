@@ -9,10 +9,10 @@ element.innerHTML='Something New!!!';
 var element1=document.getElementById('image');
 var marginLeft =0;
 function moveRight() {
-    marginLeft=marginLeft + 10;
+    marginLeft=marginLeft + 1;
     img.style.marginLeft=marginLeft +'px';
 }
 element1.onclick= function() {
-    var interval=setInterval(moveLeft,100);
+    var interval=setInterval(moveLeft,50);
   //image.style.marginLeft= '200px';  
 };
